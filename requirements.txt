@@ -1,0 +1,16 @@
+flask
+langchain
+openai
+chromadb
+tiktoken
+python-dotenv
+pymupdf
+urllib3
+torch
+transformers
+scikit-learn
+pandas
+numpy
+tqdm
+requests
+cachetools

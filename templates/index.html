@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI (Vanilla)</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!-- Ngăn lỗi favicon -->
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <button id="new-chat">+ New Chat</button>
+            <ul id="session-list"></ul>
+        </aside>
+
+        <main class="chat-section">
+            <div class="chat-header">Chatbot Thông Tin Bóng Đá Vui Vẻ 🏃‍♂️⚽</div>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Nhập câu hỏi của bạn...">
+                <button id="send-btn">Gửi</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const input = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const sessionList = document.getElementById('session-list');
+        const newChatBtn = document.getElementById('new-chat');
+        const fileUpload = document.getElementById('file-upload');
+
+        let sessions = JSON.parse(localStorage.getItem('sessions')) || {};
+        let sessionNames = JSON.parse(localStorage.getItem('sessionNames')) || {};
+        let currentSession = null;
+        let uploadedFileContent = "";
+
+        function saveToLocalStorage() {
+            localStorage.setItem('sessions', JSON.stringify(sessions));
+            localStorage.setItem('sessionNames', JSON.stringify(sessionNames));
+            localStorage.setItem('currentSession', currentSession);
+        }
+
+        // function createSession(name = '') {
+        //     const id = 'session_' + Date.now();
+        //     sessions[id] = [];
+        //     sessionNames[id] = name || 'Cuộc trò chuyện';
+        //     currentSession = id;
+        //     updateUrlWithSession(id);
+        //     updateSidebar();
+        //     renderChat();
+        //     saveToLocalStorage();
+        // }
+
+        // let sessionCounter = 1; // Biến đếm toàn cục
+        // function createSession(name = '') {
+        //     const id = 'session_' + Date.now();
+        //     sessions[id] = [];
+            
+        //     if (!name) {
+        //         name = `Cuộc trò chuyện số ${sessionCounter++}`;
+        //     }
+            
+        //     sessionNames[id] = name;
+        //     currentSession = id;
+        //     updateUrlWithSession(id);
+        //     updateSidebar();
+        //     renderChat();
+        //     saveToLocalStorage();
+        // }
+        const randomEmojis = ['⚽', '🏆', '👕', '🕒', '📅', '🌟','🪖','🚓','💣', '👉','🪖'];
+
+        function createSession(name = '') {
+    const id = 'session_' + Date.now();
+    sessions[id] = [];
+    
+    if (!name) {
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+        const randomEmoji = randomEmojis[Math.floor(Math.random() * randomEmojis.length)];
+        name = `${randomEmoji} Chat lúc ${timeStr}`;
+    }
+    
+    sessionNames[id] = name;
+            currentSession = id;
+            updateUrlWithSession(id);
+            updateSidebar();
+            renderChat();
+            saveToLocalStorage();
+}
+        function updateSidebar() {
+            sessionList.innerHTML = '';
+            for (let id in sessions) {
+                const li = document.createElement('li');
+                li.className = id === currentSession ? 'active' : '';
+
+                const span = document.createElement('span');
+                span.textContent = sessionNames[id];
+                li.appendChild(span);
+
+                // Click trái: chọn phiên
+                li.onclick = () => {
+                    currentSession = id;
+                    updateUrlWithSession(id);
+                    renderChat();
+                    updateSidebar();
+                    saveToLocalStorage();
+                };
+
+                // Click phải: xoá phiên
+                li.oncontextmenu = (e) => {
+                    e.preventDefault(); // Ngăn mở menu mặc định
+                    const confirmDelete = confirm(`Bạn có muốn xoá "${sessionNames[id]}" không?`);
+                    if (confirmDelete) {
+                        delete sessions[id];
+                        delete sessionNames[id];
+                        if (id === currentSession) {
+                            currentSession = Object.keys(sessions)[0] || null;
+                        }
+                        updateSidebar();
+                        renderChat();
+                        saveToLocalStorage();
+                    }
+                };
+
+                const renameBtn = document.createElement('button');
+                renameBtn.textContent = '✏️';
+                renameBtn.style.float = 'right';
+                renameBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    const newName = prompt('Đặt lại tên hội thoại:', sessionNames[id]);
+                    if (newName) {
+                        sessionNames[id] = newName;
+                        updateSidebar();
+                        saveToLocalStorage();
+                    }
+                };
+
+                li.appendChild(renameBtn);
+                sessionList.appendChild(li);
+            }
+        }
+
+        function renderChat() {
+            chatBox.innerHTML = '';
+            const chat = sessions[currentSession] || [];
+            chat.forEach(msg => {
+                const div = document.createElement('div');
+                div.className = 'msg ' + msg.role;
+                div.textContent = `${msg.role === 'user' ? 'Bạn' : 'AI'}: ${msg.content}`;
+                chatBox.appendChild(div);
+            });
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        async function sendMessage(text = '') {
+            const message = text || input.value.trim();
+            if (!message || !currentSession) return;
+
+            const userMsg = {
+                role: 'user',
+                content: message
+            };
+            sessions[currentSession].push(userMsg);
+            input.value = '';
+            renderChat();
+            saveToLocalStorage();
+
+            try {
+                const res = await fetch('/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message
+                    })
+                });
+
+                const data = await res.json();
+                const botMsg = {
+                    role: 'bot',
+                    content: data.response || 'Có lỗi xảy ra!'
+                };
+                sessions[currentSession].push(botMsg);
+                renderChat();
+                saveToLocalStorage();
+            } catch (e) {
+                console.error('Lỗi khi gửi yêu cầu:', e);
+                const botMsg = {
+                    role: 'bot',
+                    content: 'Không thể kết nối đến máy chủ.'
+                };
+                sessions[currentSession].push(botMsg);
+                renderChat();
+                saveToLocalStorage();
+            }
+        }
+
+        function updateUrlWithSession(id) {
+            const url = new URL(window.location);
+            url.searchParams.set('session', id);
+            window.history.pushState({}, '', url);
+        }
+
+        function loadInitialSession() {
+            const params = new URLSearchParams(window.location.search);
+            const sessionFromUrl = params.get('session');
+            const savedSession = localStorage.getItem('currentSession');
+
+            if (sessionFromUrl && sessions[sessionFromUrl]) {
+                currentSession = sessionFromUrl;
+            } else if (savedSession && sessions[savedSession]) {
+                currentSession = savedSession;
+            } else {
+                createSession();
+                return;
+            }
+
+            updateSidebar();
+            renderChat();
+            updateUrlWithSession(currentSession);
+        }
+
+        sendBtn.addEventListener('click', () => sendMessage());
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+        newChatBtn.addEventListener('click', () => createSession());
+
+        window.addEventListener('load', loadInitialSession);
+    </script>
+
+</body>
+
+</html>

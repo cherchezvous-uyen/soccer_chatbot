@@ -1,0 +1,27 @@
+[
+  {
+    "id": "doc_21",
+    "similarity": 0.5975849628448486,
+    "content": "{\n  \"competition\": \"uefa champions league\",\n  \"season\": \"2024-2025\",\n  \"matchday\": 2,\n  \"date\": \"2024-10-01\",\n  \"home_team\": \"borussia dortmund\",\n  \"away_team\": \"celtic fc\",\n  \"score\": \"7 - 1\",\n  \"half_time_score\": \"5 - 1\",\n  \"result\": \"home_team\",\n  \"referee\": \"josé sánchez martínez\",\n  \"area\": \"europe\"\n}"
+  },
+  {
+    "id": "doc_61",
+    "similarity": 0.5874283313751221,
+    "content": "{\n  \"competition\": \"uefa champions league\",\n  \"season\": \"2024-2025\",\n  \"matchday\": 4,\n  \"date\": \"2024-11-05\",\n  \"home_team\": \"celtic fc\",\n  \"away_team\": \"rb leipzig\",\n  \"score\": \"3 - 1\",\n  \"half_time_score\": \"2 - 1\",\n  \"result\": \"home_team\",\n  \"referee\": \"benoît bastien\",\n  \"area\": \"europe\"\n}"
+  },
+  {
+    "id": "doc_11",
+    "similarity": 0.5796162486076355,
+    "content": "{\n  \"competition\": \"uefa champions league\",\n  \"season\": \"2024-2025\",\n  \"matchday\": 1,\n  \"date\": \"2024-09-18\",\n  \"home_team\": \"celtic fc\",\n  \"away_team\": \"šk slovan bratislava\",\n  \"score\": \"5 - 1\",\n  \"half_time_score\": \"1 - 0\",\n  \"result\": \"home_team\",\n  \"referee\": \"danny makkelie\",\n  \"area\": \"europe\"\n}"
+  },
+  {
+    "id": "doc_58",
+    "similarity": 0.579126238822937,
+    "content": "{\n  \"competition\": \"uefa champions league\",\n  \"season\": \"2024-2025\",\n  \"matchday\": 4,\n  \"date\": \"2024-11-05\",\n  \"home_team\": \"borussia dortmund\",\n  \"away_team\": \"sk sturm graz\",\n  \"score\": \"1 - 0\",\n  \"half_time_score\": \"0 - 0\",\n  \"result\": \"home_team\",\n  \"referee\": \"erik lambrechts\",\n  \"area\": \"europe\"\n}"
+  },
+  {
+    "id": "doc_91",
+    "similarity": 0.5758419036865234,
+    "content": "{\n  \"competition\": \"uefa champions league\",\n  \"season\": \"2024-2025\",\n  \"matchday\": 6,\n  \"date\": \"2024-12-10\",\n  \"home_team\": \"gnk dinamo zagreb\",\n  \"away_team\": \"celtic fc\",\n  \"score\": \"0 - 0\",\n  \"half_time_score\": \"0 - 0\",\n  \"result\": \"draw\",\n  \"referee\": \"felix zwayer\",\n  \"area\": \"europe\"\n}"
+  }
+]

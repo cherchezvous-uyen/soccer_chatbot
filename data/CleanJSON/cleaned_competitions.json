@@ -1,0 +1,184 @@
+[
+  {
+    "competition_id": 2013,
+    "competition_name": "campeonato brasileiro série a",
+    "area": "brazil",
+    "competition_code": "BSA",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2025-03-29",
+      "end_date": "2025-12-21",
+      "current_matchday": 5
+    },
+    "number_of_available_seasons": 9,
+    "last_updated": "2024-09-13T16:55:53Z"
+  },
+  {
+    "competition_id": 2016,
+    "competition_name": "championship",
+    "area": "england",
+    "competition_code": "ELC",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-09",
+      "end_date": "2025-05-03",
+      "current_matchday": 44
+    },
+    "number_of_available_seasons": 8,
+    "last_updated": "2024-09-13T16:51:18Z"
+  },
+  {
+    "competition_id": 2021,
+    "competition_name": "premier league",
+    "area": "england",
+    "competition_code": "PL",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-16",
+      "end_date": "2025-05-25",
+      "current_matchday": 33
+    },
+    "number_of_available_seasons": 126,
+    "last_updated": "2024-09-13T16:51:24Z"
+  },
+  {
+    "competition_id": 2001,
+    "competition_name": "uefa champions league",
+    "area": "europe",
+    "competition_code": "CL",
+    "competition_type": "cup",
+    "current_season": {
+      "start_date": "2024-09-17",
+      "end_date": "2025-05-31",
+      "current_matchday": 2
+    },
+    "number_of_available_seasons": 45,
+    "last_updated": "2024-09-13T16:53:48Z"
+  },
+  {
+    "competition_id": 2018,
+    "competition_name": "european championship",
+    "area": "europe",
+    "competition_code": "EC",
+    "competition_type": "cup",
+    "current_season": {
+      "start_date": "2024-06-14",
+      "end_date": "2024-07-14",
+      "current_matchday": 7
+    },
+    "number_of_available_seasons": 17,
+    "last_updated": "2024-09-13T17:04:30Z"
+  },
+  {
+    "competition_id": 2015,
+    "competition_name": "ligue 1",
+    "area": "france",
+    "competition_code": "FL1",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-18",
+      "end_date": "2025-05-18",
+      "current_matchday": 30
+    },
+    "number_of_available_seasons": 81,
+    "last_updated": "2024-09-13T16:49:18Z"
+  },
+  {
+    "competition_id": 2002,
+    "competition_name": "bundesliga",
+    "area": "germany",
+    "competition_code": "BL1",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-23",
+      "end_date": "2025-05-17",
+      "current_matchday": 30
+    },
+    "number_of_available_seasons": 62,
+    "last_updated": "2024-09-13T16:48:00Z"
+  },
+  {
+    "competition_id": 2019,
+    "competition_name": "serie a",
+    "area": "italy",
+    "competition_code": "SA",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-18",
+      "end_date": "2025-05-25",
+      "current_matchday": 33
+    },
+    "number_of_available_seasons": 93,
+    "last_updated": "2024-09-13T16:50:07Z"
+  },
+  {
+    "competition_id": 2003,
+    "competition_name": "eredivisie",
+    "area": "netherlands",
+    "competition_code": "DED",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-09",
+      "end_date": "2025-05-18",
+      "current_matchday": 31
+    },
+    "number_of_available_seasons": 69,
+    "last_updated": "2024-09-13T16:34:42Z"
+  },
+  {
+    "competition_id": 2017,
+    "competition_name": "primeira liga",
+    "area": "portugal",
+    "competition_code": "PPL",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-11",
+      "end_date": "2025-05-17",
+      "current_matchday": 30
+    },
+    "number_of_available_seasons": 76,
+    "last_updated": "2024-09-13T16:54:08Z"
+  },
+  {
+    "competition_id": 2152,
+    "competition_name": "copa libertadores",
+    "area": "south america",
+    "competition_code": "CLI",
+    "competition_type": "cup",
+    "current_season": {
+      "start_date": "2025-02-05",
+      "end_date": "2025-11-29",
+      "current_matchday": 3
+    },
+    "number_of_available_seasons": 5,
+    "last_updated": "2025-02-13T21:08:12Z"
+  },
+  {
+    "competition_id": 2014,
+    "competition_name": "primera division",
+    "area": "spain",
+    "competition_code": "PD",
+    "competition_type": "league",
+    "current_season": {
+      "start_date": "2024-08-18",
+      "end_date": "2025-05-25",
+      "current_matchday": 32
+    },
+    "number_of_available_seasons": 94,
+    "last_updated": "2024-09-13T16:52:33Z"
+  },
+  {
+    "competition_id": 2000,
+    "competition_name": "fifa world cup",
+    "area": "world",
+    "competition_code": "WC",
+    "competition_type": "cup",
+    "current_season": {
+      "start_date": "2022-11-20",
+      "end_date": "2022-12-18",
+      "current_matchday": 8
+    },
+    "number_of_available_seasons": 22,
+    "last_updated": "2024-09-13T17:04:20Z"
+  }
+]

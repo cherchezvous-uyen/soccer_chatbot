@@ -1,0 +1,462 @@
+[
+    {
+        "player": {
+            "id": 1100,
+            "name": "E. Haaland",
+            "firstname": "Erling",
+            "lastname": "Braut Haaland",
+            "age": 25,
+            "nationality": "Norway",
+            "photo": "https://media.api-sports.io/football/players/1100.png"
+        },
+        "team": {
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "games": {
+            "appearences": 31,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 27
+        }
+    },
+    {
+        "player": {
+            "id": 152982,
+            "name": "C. Palmer",
+            "firstname": "Cole Jermaine",
+            "lastname": "Palmer",
+            "age": 23,
+            "nationality": "England",
+            "photo": "https://media.api-sports.io/football/players/152982.png"
+        },
+        "team": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "games": {
+            "appearences": 33,
+            "position": "Midfielder"
+        },
+        "goals": {
+            "total": 22
+        }
+    },
+    {
+        "player": {
+            "id": 2864,
+            "name": "A. Isak",
+            "firstname": "Alexander",
+            "lastname": "Isak",
+            "age": 26,
+            "nationality": "Sweden",
+            "photo": "https://media.api-sports.io/football/players/2864.png"
+        },
+        "team": {
+            "id": 34,
+            "name": "Newcastle",
+            "logo": "https://media.api-sports.io/football/teams/34.png"
+        },
+        "games": {
+            "appearences": 30,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 21
+        }
+    },
+    {
+        "player": {
+            "id": 19366,
+            "name": "O. Watkins",
+            "firstname": "Oliver George Arthur",
+            "lastname": "Watkins",
+            "age": 30,
+            "nationality": "England",
+            "photo": "https://media.api-sports.io/football/players/19366.png"
+        },
+        "team": {
+            "id": 66,
+            "name": "Aston Villa",
+            "logo": "https://media.api-sports.io/football/teams/66.png"
+        },
+        "games": {
+            "appearences": 37,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 19
+        }
+    },
+    {
+        "player": {
+            "id": 631,
+            "name": "P. Foden",
+            "firstname": "Philip Walter",
+            "lastname": "Foden",
+            "age": 25,
+            "nationality": "England",
+            "photo": "https://media.api-sports.io/football/players/631.png"
+        },
+        "team": {
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "games": {
+            "appearences": 35,
+            "position": "Midfielder"
+        },
+        "goals": {
+            "total": 19
+        }
+    },
+    {
+        "player": {
+            "id": 18883,
+            "name": "D. Solanke",
+            "firstname": "Dominic Ayodele",
+            "lastname": "Solanke-Mitchell",
+            "age": 28,
+            "nationality": "England",
+            "photo": "https://media.api-sports.io/football/players/18883.png"
+        },
+        "team": {
+            "id": 35,
+            "name": "Bournemouth",
+            "logo": "https://media.api-sports.io/football/teams/35.png"
+        },
+        "games": {
+            "appearences": 38,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 19
+        }
+    },
+    {
+        "player": {
+            "id": 306,
+            "name": "Mohamed Salah",
+            "firstname": "Mohamed",
+            "lastname": "Salah Hamed Mahrous Ghaly",
+            "age": 33,
+            "nationality": "Egypt",
+            "photo": "https://media.api-sports.io/football/players/306.png"
+        },
+        "team": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "games": {
+            "appearences": 32,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 18
+        }
+    },
+    {
+        "player": {
+            "id": 186,
+            "name": "Son Heung-Min",
+            "firstname": "Heung-Min",
+            "lastname": "Son",
+            "age": 33,
+            "nationality": "Korea Republic",
+            "photo": "https://media.api-sports.io/football/players/186.png"
+        },
+        "team": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png"
+        },
+        "games": {
+            "appearences": 35,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 17
+        }
+    },
+    {
+        "player": {
+            "id": 19428,
+            "name": "J. Bowen",
+            "firstname": "Jarrod",
+            "lastname": "Bowen",
+            "age": 29,
+            "nationality": "England",
+            "photo": "https://media.api-sports.io/football/players/19428.png"
+        },
+        "team": {
+            "id": 48,
+            "name": "West Ham",
+            "logo": "https://media.api-sports.io/football/teams/48.png"
+        },
+        "games": {
+            "appearences": 34,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 16
+        }
+    },
+    {
+        "player": {
+            "id": 25927,
+            "name": "J. Mateta",
+            "firstname": "Jean-Philippe",
+            "lastname": "Mateta",
+            "age": 28,
+            "nationality": "France",
+            "photo": "https://media.api-sports.io/football/players/25927.png"
+        },
+        "team": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https://media.api-sports.io/football/teams/52.png"
+        },
+        "games": {
+            "appearences": 35,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 16
+        }
+    },
+    {
+        "player": {
+            "id": 1460,
+            "name": "B. Saka",
+            "firstname": "Bukayo Ayoyinka Temidayo",
+            "lastname": "Saka",
+            "age": 24,
+            "nationality": "England",
+            "photo": "https://media.api-sports.io/football/players/1460.png"
+        },
+        "team": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "games": {
+            "appearences": 35,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 16
+        }
+    },
+    {
+        "player": {
+            "id": 283058,
+            "name": "N. Jackson",
+            "firstname": "Nicolas",
+            "lastname": "Jackson",
+            "age": 24,
+            "nationality": "Senegal",
+            "photo": "https://media.api-sports.io/football/players/283058.png"
+        },
+        "team": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "games": {
+            "appearences": 35,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 14
+        }
+    },
+    {
+        "player": {
+            "id": 18931,
+            "name": "C. Wood",
+            "firstname": "Christopher Grant",
+            "lastname": "Wood",
+            "age": 34,
+            "nationality": "New Zealand",
+            "photo": "https://media.api-sports.io/football/players/18931.png"
+        },
+        "team": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https://media.api-sports.io/football/teams/65.png"
+        },
+        "games": {
+            "appearences": 31,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 14
+        }
+    },
+    {
+        "player": {
+            "id": 978,
+            "name": "K. Havertz",
+            "firstname": "Kai Lukas",
+            "lastname": "Havertz",
+            "age": 26,
+            "nationality": "Germany",
+            "photo": "https://media.api-sports.io/football/players/978.png"
+        },
+        "team": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "games": {
+            "appearences": 37,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 13
+        }
+    },
+    {
+        "player": {
+            "id": 20649,
+            "name": "Y. Wissa",
+            "firstname": "Yoane",
+            "lastname": "Wissa",
+            "age": 29,
+            "nationality": "Congo DR",
+            "photo": "https://media.api-sports.io/football/players/20649.png"
+        },
+        "team": {
+            "id": 55,
+            "name": "Brentford",
+            "logo": "https://media.api-sports.io/football/teams/55.png"
+        },
+        "games": {
+            "appearences": 34,
+            "position": "Midfielder"
+        },
+        "goals": {
+            "total": 12
+        }
+    },
+    {
+        "player": {
+            "id": 1946,
+            "name": "L. Trossard",
+            "firstname": "Leandro",
+            "lastname": "Trossard",
+            "age": 31,
+            "nationality": "Belgium",
+            "photo": "https://media.api-sports.io/football/players/1946.png"
+        },
+        "team": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "games": {
+            "appearences": 34,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 12
+        }
+    },
+    {
+        "player": {
+            "id": 1165,
+            "name": "Matheus Cunha",
+            "firstname": "Matheus Santos",
+            "lastname": "Carneiro da Cunha",
+            "age": 26,
+            "nationality": "Brazil",
+            "photo": "https://media.api-sports.io/football/players/1165.png"
+        },
+        "team": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https://media.api-sports.io/football/teams/39.png"
+        },
+        "games": {
+            "appearences": 32,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 12
+        }
+    },
+    {
+        "player": {
+            "id": 24888,
+            "name": "Hwang Hee-Chan",
+            "firstname": "Hee-Chan",
+            "lastname": "Hwang",
+            "age": 29,
+            "nationality": "Korea Republic",
+            "photo": "https://media.api-sports.io/football/players/24888.png"
+        },
+        "team": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https://media.api-sports.io/football/teams/39.png"
+        },
+        "games": {
+            "appearences": 29,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 12
+        }
+    },
+    {
+        "player": {
+            "id": 51617,
+            "name": "D. Núñez",
+            "firstname": "Darwin Gabriel",
+            "lastname": "Núñez Ribeiro",
+            "age": 26,
+            "nationality": "Uruguay",
+            "photo": "https://media.api-sports.io/football/players/51617.png"
+        },
+        "team": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "games": {
+            "appearences": 36,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 11
+        }
+    },
+    {
+        "player": {
+            "id": 2413,
+            "name": "Richarlison",
+            "firstname": "Richarlison",
+            "lastname": "de Andrade",
+            "age": 28,
+            "nationality": "Brazil",
+            "photo": "https://media.api-sports.io/football/players/2413.png"
+        },
+        "team": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png"
+        },
+        "games": {
+            "appearences": 28,
+            "position": "Attacker"
+        },
+        "goals": {
+            "total": 11
+        }
+    }
+]
